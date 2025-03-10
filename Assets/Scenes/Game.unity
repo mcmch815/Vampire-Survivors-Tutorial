@@ -788,6 +788,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: ef9d27a66dd2d6940b3b8cdcd1d9ad47, type: 2}
+  experience: 0
+  level: 1
+  experienceCap: 100
+  experienceCapIncrease: 100
 --- !u!1 &1890900626
 GameObject:
   m_ObjectHideFlags: 0
