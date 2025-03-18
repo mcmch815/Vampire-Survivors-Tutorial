@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &262658843
 Transform:
   m_ObjectHideFlags: 0
@@ -452,61 +452,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
---- !u!1001 &1468737966
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3329369410617116135, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_Name
-      value: Bat (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.935192
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6014453
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329985936976082703, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
+    - target: {fileID: 7572910048218677045, guid: 6b2b09d635f8d4d4baab7d533bd74a9b, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -575,6 +522,7 @@ GameObject:
   - component: {fileID: 1667333229}
   - component: {fileID: 1667333228}
   - component: {fileID: 1667333230}
+  - component: {fileID: 1667333231}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -652,7 +600,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!212 &1667333225
@@ -791,6 +739,8 @@ MonoBehaviour:
   experience: 0
   level: 1
   experienceCap: 0
+  invincibilityDuration: 0.5
+  invincibilityTimer: 0
   levelRanges:
   - startLevel: 1
     endLevel: 3
@@ -798,6 +748,18 @@ MonoBehaviour:
   - startLevel: 4
     endLevel: 5
     experienceCapIncrease: 200
+--- !u!114 &1667333231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667333222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b0a89632bd36e4abaeb00bca281481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1890900626
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,4 +885,3 @@ SceneRoots:
   - {fileID: 8632429932223897793}
   - {fileID: 1890900628}
   - {fileID: 661931805}
-  - {fileID: 1468737966}

@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         player = FindAnyObjectByType<PlayerMovement>().transform;
+        Debug.Log("Enemy has found the player");
     }
 
     // Update is called once per frame

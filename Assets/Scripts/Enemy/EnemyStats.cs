@@ -28,4 +28,16 @@ public class EnemyStats : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    private void OnTriggerStay2D(Collider2D col)
+        {
+            Debug.Log("Stay collision detected");
+            if(col.gameObject.CompareTag("Player"))
+            {
+                Debug.Log("Player is colliding with enemy");
+                PlayerStats player = col.gameObject.GetComponent<PlayerStats>();
+                player.TakeDamage(currentDamage);
+            }
+        }
 }
+
