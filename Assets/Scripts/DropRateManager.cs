@@ -33,13 +33,7 @@ public class DropRateManager : MonoBehaviour
                 possibleDrops.Add(drop);
             }
         }
-
-        // // If there are some Possible Drops, instantiate a random one.
-        // if (possibleDrops.Count > 0)
-        // {
-        //     Drops drop = possibleDrops[Random.Range(0, possibleDrops.Count);];
-        //     Instantiate(drop.itemPrefFab, transform.position, Quaternion.identity);
-        // }
+  
 
         // If there are some possible drops, spawn the rarest one
         if (possibleDrops.Count > 0)

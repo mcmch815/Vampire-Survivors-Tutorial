@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HealthPotion : MonoBehaviour, ICollectible
+public class HealthPotion : Pickup, ICollectible
 {
     public float healthAmount = 10;
 
@@ -8,7 +8,7 @@ public class HealthPotion : MonoBehaviour, ICollectible
     {
         PlayerStats player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         player.Heal(healthAmount);
-        Destroy(gameObject);
+        
     }
  
 }
